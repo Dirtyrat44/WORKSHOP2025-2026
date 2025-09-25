@@ -124,14 +124,17 @@
     padding: 24px 24px 12px;
   }
   .message{
-    max-width: min(62ch, 60%);
+    max-width: none;                    
     margin: 0 0 18px;
   }
   .message .bubble{
+    display: inline-block;             
+    width: fit-content;                 
+    max-width: min(62ch, 60%);          
     padding: 10px 14px;
     border-radius: 12px;
     line-height: 1.6;
-    word-wrap: break-word;
+    overflow-wrap: anywhere;           
     box-shadow: 0 6px 14px rgba(0,0,0,.25);
   }
   .message .time{
